@@ -10,4 +10,5 @@ public class PostController {
     public String index(){
         return "post";
     }
+    
 }
