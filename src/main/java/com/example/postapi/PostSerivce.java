@@ -24,6 +24,5 @@ public class PostSerivce {
         ZipCodeDTO dto = mapper.readValue(json, ZipCodeDTO.class);
         List<Results> results = dto.getResults();
         return results;
-        // System.out.println(results.get(0).getAddress1());
     }
 }
