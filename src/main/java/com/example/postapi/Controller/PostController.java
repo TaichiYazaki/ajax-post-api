@@ -24,7 +24,7 @@ public class PostController {
 
     @RequestMapping("/submit")
     public String submit(String zipCode, Model model) throws IOException {
-        if (zipCode == null) {
+        if (zipCode.isBlank()) {
             return "redirect:/";
         } else {
             List<Results> results = serivce.service(zipCode);
