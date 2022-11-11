@@ -1,6 +1,5 @@
 package com.example.postapi.DTO;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Data;
