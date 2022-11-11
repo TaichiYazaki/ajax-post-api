@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>住所検索</title>
 </head>
 <body>
+    <h1>住所検索</h1>
     <form th:action="@{/submit}" method="post">
-        郵便番号：<input type="text" name="number">
-        <input type="button" name="button" value="検索">
+        郵便番号：<input type="text" name="zipCode">
+        <input type="submit" name="button" value="検索">
     </form>
+    <hr>
+        <table>
+            <tr>
+                <td th:text="${zipcode}"></td>
+            </tr>
+            <tr>
+                <td th:text="${kana1}"></td>
+                <td th:text="${kana2}"></td>
+                <td th:text="${kana3}"></td>
+            </tr>
+            <tr>
+                <td th:text="${address1}"></td>
+                <td th:text="${address2}"></td>
+                <td th:text="${address3}"></td>
+            </tr>
+        </table>
+
 </body>
 </html>
