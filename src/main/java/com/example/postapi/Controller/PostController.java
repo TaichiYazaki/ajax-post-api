@@ -23,7 +23,6 @@ public class PostController {
     @RequestMapping("/submit")
     @ResponseBody
     public String submit(@RequestBody String zipcode) {
-        System.out.println(zipcode);
         return serivce.service(zipcode);
 
     }

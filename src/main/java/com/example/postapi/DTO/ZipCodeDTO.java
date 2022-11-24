@@ -6,12 +6,14 @@ import lombok.Data;
 
 @Data
 public class ZipCodeDTO {
+    //参考
+
     /* エラーメッセージ */
-    private String message;
+    // private String message;
 
-    /* 郵便情報 */
-    private List<Results> results;
+    // /* 郵便情報 */
+    // private List<Results> results;
 
-    /* ステータスコード */
-    private Integer status = 200;
+    // /* ステータスコード */
+    // private Integer status = 200;
 }
